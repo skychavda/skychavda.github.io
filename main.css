@@ -1,0 +1,35 @@
+a{
+  color: #000;
+}
+
+.active>.nav-link{
+  color: #fd7964!important;
+}
+
+.active{
+  color: #fd7964!important;
+}
+
+.nav-link{
+  padding: 0 40px;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.btn{
+  border-radius: 0;
+  font-weight: bold;
+}
+
+.btn-lg{
+  font-size: 15px;
+  line-height: 1;
+  padding: 1.5rem 3rem;
+  letter-spacing: 3px;
+}
+
+.btn-danger, .btn-danger:hover{
+  background-color: #fd7964;
+  border-color: #fd7964;
+}
