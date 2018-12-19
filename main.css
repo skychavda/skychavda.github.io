@@ -97,7 +97,7 @@ a{
 }
 .popupInput:focus + .popupLabel, .popupInput:valid + .popupLabel{
   top: -52px;
-  font-size: 5px;
+  font-size: 13px;
   color: #fd7964;
 }
 
