@@ -1,3 +1,1 @@
-# zuru
-
-#Furniture webiste
+# Furniture Website
