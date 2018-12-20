@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Furniture</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=1.0, minimum-scale=1.0, maximum-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css">
@@ -11,7 +12,8 @@
   </head>
   <body>
 
-    <nav class="navbar navbar-expand-lg navbar-light" style="padding: 50px 150px;">
+    <nav class="navbar navbar-expand-lg navbar-light main" >
+      <div class="container-fluid">
       <a class="navbar-brand" href="#">Furniture</a>
         <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" name="button" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -29,15 +31,16 @@
         </div>
         <ul class="nav justify-content-end">
           <li class="nav-item">
-            <a href="#" class="nav-link"><i class="far fa-user"></i></a>
+            <a href="#" class="nav-link icon"><i class="far fa-user"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"><i class="fas fa-search"></i></a>
+            <a href="#" class="nav-link icon"><i class="fas fa-search"></i></a>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link"><i class="fas fa-shopping-bag"></i></a>
+            <a href="#" class="nav-link icon"><i class="fas fa-shopping-bag"></i></a>
           </li>
         </ul>
+      </div>
     </nav>
 
     <!-- <div class="slider">
@@ -61,51 +64,51 @@
         </div>
     </div> -->
 
-    <div class="slider" style="margin: 0 auto; padding:0 150px;">
+    <div class="slider main container-fluid" style="margin: 0 auto;">
       <div><img class="d-block w-100" src="images/slider1.png" alt=""></div>
       <div><img class="d-block w-100" src="images/slider2.jpg" alt=""></div>
       <div><img class="d-block w-100" src="images/slider3.jpg" alt=""></div>
     </div>
 
-    <div class="main" style="padding: 0 150px; margin: 100px 0;">
+    <div class="main container-fluid" style="margin: 100px 0;">
       <div class="row">
-          <div class="col-sm-2">
-            <aside class="">
+          <div class="col-lg-2 col-md-3">
+            <aside class="col-12">
               <div class="color opacity-0">
                 <div class="row">
-                  <div class="col-md-6 float-left">
+                  <div class="col-md-6 col-6 float-left">
                     <p>Color</p>
                   </div>
-                  <div class="col-md-6 float-right">
+                  <div class="col-md-6 col-6 float-right">
                     <i class="fas fa-minus"></i>
                   </div>
                 </div>
                 <hr style="margin-top:0;">
                 <div class="row circle">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color1">
                     <i class="fas fa-circle" style="color:#0075ff;"></i>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color2">
                     <i class="fas fa-circle" style="color:#ff1f00;"></i>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color3">
                     <i class="fas fa-circle" style="color:#02ffdd;"></i>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color4">
                     <i class="fas fa-circle" style="color:#ff6300;"></i>
                   </div>
                 </div>
                 <div class="row circle">
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color5">
                     <i class="fas fa-circle" style="color:#00ff3d;"></i>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color6">
                     <i class="fas fa-circle" style="color:#4900ff;"></i>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color7">
                     <i class="fas fa-circle" style="color:#ff0020;"></i>
                   </div>
-                  <div class="col-md-3">
+                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color8">
                     <i class="fas fa-circle" style="color:#ff0075;"></i>
                   </div>
                 </div>
@@ -113,10 +116,10 @@
 
               <div class="filter">
                 <div class="row opacity-0">
-                  <div class="col-md-6 float-left">
+                  <div class="col-md-6 col-6 float-left">
                     <p>Filter</p>
                   </div>
-                  <div class="col-md-6 float-right">
+                  <div class="col-md-6 col-6 float-right">
                     <i class="fas fa-minus"></i>
                   </div>
                 </div>
@@ -127,111 +130,101 @@
                 <div class="">
                   <p class="filter-tag opacity-1" style="font-weight:bold;">Materials</p>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Synthetic skin(6)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Metal(88)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Wooden(158)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Fabric(294)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Polyurethane(25)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Viscoelastic(26)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Narutal fiber(17)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Synthetic fiber(20)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Natural skin(7)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
                   </div>
                   <div class="row material-cate">
-                    <div class="col-md-8">
+                    <div class="col-md-8 col-8">
                       <p class="materials-cate-name">Foam(77)</p>
                     </div>
-                    <div class="col-md-4" style="text-align:right;">
+                    <div class="col-md-4 col-4" style="text-align:right;">
                       <div class="checkbox">
-                        <label for="checkboxInput"></label>
                         <input type="checkbox" id="checkboxInput"/>
                       </div>
                     </div>
@@ -244,10 +237,10 @@
 
               <div class="price">
                 <div class="row opacity-0">
-                  <div class="col-md-6 float-left">
+                  <div class="col-md-6 col-6 float-left">
                     <p>Price</p>
                   </div>
-                  <div class="col-md-6 float-right">
+                  <div class="col-md-6 col-6 float-right">
                     <i class="fas fa-minus"></i>
                   </div>
                 </div>
@@ -267,8 +260,8 @@
               </div>
             </aside>
           </div>
-          <div class="col-sm-10" style="margin: 0 auto;">
-            <ul class="nav" style="justify-content:center;">
+          <div class="col-lg-10 col-md-9 col-12" style="margin: 0 auto;">
+            <ul class="nav prod_nav" style="justify-content:center;">
               <li class="nav-item">
                 <a href="#" class="nav-link active">All<a>
               </li>
@@ -283,14 +276,16 @@
               </li>
             </ul>
             <div class="row text-center" style="margin-top:50px;">
-              <div class="col-sm-6 col-12">
+              <div class="col-lg-6 col-md-12 col-12">
                   <div class="row product_height">
                     <div class="col-sm-6">
                       <img src="images/prod1.jpg">
                     </div>
-                    <div class="col-sm-6 text-left">
-                        <h4 class="float-left prod_h4">patio<br> armchari, blue</h4>
-                        <h5 class="text-right">250</h5>
+                    <div class="col-sm-6 col-12 text-left">
+                      <div class="row">
+                          <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                          <h5 class="text-right col-6">250</h5>
+                      </div>
                         <p class="pord_p">Within 10 days</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                         <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -301,8 +296,10 @@
                       <img src="images/prod2.jpg" alt="">
                     </div>
                     <div class="col-sm-6 text-left">
-                      <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                      <h5 class="text-right">250</h5>
+                      <div class="row">
+                          <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                          <h5 class="text-right col-6">250</h5>
+                      </div>
                       <p class="pord_p">Within 10 days</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -313,8 +310,10 @@
                       <img src="images/prod3.jpg" alt="">
                     </div>
                     <div class="col-sm-6 text-left">
-                      <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                      <h5 class="text-right">250</h5>
+                      <div class="row">
+                          <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                          <h5 class="text-right col-6">250</h5>
+                      </div>
                       <p class="pord_p">Within 10 days</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -325,8 +324,10 @@
                       <img src="images/prod4.jpg" alt="">
                     </div>
                     <div class="col-sm-6 text-left">
-                      <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                      <h5 class="text-right">250</h5>
+                      <div class="row">
+                          <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                          <h5 class="text-right col-6">250</h5>
+                      </div>
                       <p class="pord_p">Within 10 days</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -337,22 +338,26 @@
                       <img src="images/prod5.jpg" alt="">
                     </div>
                     <div class="col-sm-6 text-left">
-                      <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                      <h5 class="text-right">250</h5>
+                      <div class="row">
+                          <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                          <h5 class="text-right col-6">250</h5>
+                      </div>
                       <p class="pord_p">Within 10 days</p>
                       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                       <button class="btn prod_btn" type="button" name="button">buy now</button>
                     </div>
                   </div>
               </div>
-              <div class="col-sm-6">
+              <div class="col-lg-6 col-12">
                 <div class="row product_height">
                   <div class="col-sm-6">
                     <img src="images/prod5.jpg" alt="">
                   </div>
                   <div class="col-sm-6 text-left">
-                    <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                    <h5 class="text-right">250</h5>
+                    <div class="row">
+                        <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                        <h5 class="text-right col-6">250</h5>
+                    </div>
                     <p class="pord_p">Within 10 days</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -363,8 +368,10 @@
                     <img src="images/prod4.jpg" alt="">
                   </div>
                   <div class="col-sm-6 text-left">
-                    <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                    <h5 class="text-right">250</h5>
+                    <div class="row">
+                        <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                        <h5 class="text-right col-6">250</h5>
+                    </div>
                     <p class="pord_p">Within 10 days</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -375,8 +382,10 @@
                     <img src="images/prod3.jpg" alt="">
                   </div>
                   <div class="col-sm-6 text-left">
-                    <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                    <h5 class="text-right">250</h5>
+                    <div class="row">
+                        <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                        <h5 class="text-right col-6">250</h5>
+                    </div>
                     <p class="pord_p">Within 10 days</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -387,8 +396,10 @@
                     <img src="images/prod2.jpg" alt="">
                   </div>
                   <div class="col-sm-6 text-left">
-                    <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                    <h5 class="text-right">250</h5>
+                    <div class="row">
+                        <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                        <h5 class="text-right col-6">250</h5>
+                    </div>
                     <p class="pord_p">Within 10 days</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -399,8 +410,10 @@
                     <img src="images/prod1.jpg" alt="">
                   </div>
                   <div class="col-sm-6 text-left">
-                    <h4 class="float-left prod_h4">patio<br>armchari, blue</h4>
-                    <h5 class="text-right">250</h5>
+                    <div class="row">
+                        <h4 class="float-left prod_h4 col-6">patio<br> armchari, blue</h4>
+                        <h5 class="text-right col-6">250</h5>
+                    </div>
                     <p class="pord_p">Within 10 days</p>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
                     <button class="btn prod_btn" type="button" name="button">buy now</button>
@@ -415,26 +428,26 @@
       </div>
     </div>
 
-    <div class="collection-slider w-100" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
+    <div class="collection-slider w-100 container-fluid" data-slick='{"slidesToShow": 3, "slidesToScroll": 1}'>
       <div><img class="d-block w-75" src="images/collection1.jpg" alt="" style="margin:0 auto;"></div>
       <div><img class="d-block w-75" src="images/collection2.jpg" alt="" style="margin:0 auto;"></div>
       <div><img class="d-block w-75" src="images/collection3.jpg" alt="" style="margin:0 auto;"></div>
       <div><img class="d-block w-75" src="images/collection4.jpg" alt="" style="margin:0 auto;"></div>
     </div>
 
-    <footer>
-      <div class="" style="padding: 0 150px; margin: 100px 0;">
+    <footer class="container-fluid">
+      <div class="main" style="margin: 100px 0;">
         <div class="row">
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 col-12">
             <h5>Helpful links</h5>
             <div class="row margin-top">
-              <div class="col-sm-6 footer-link">
+              <div class="col-sm-6 footer-link col-6">
                 <p>about us</p>
                 <p>delivery and return policy</p>
                 <p>Help & FAQ</p>
                 <p>Service for professionals</p>
               </div>
-              <div class="col-sm-6 footer-link">
+              <div class="col-sm-6 footer-link col-6">
                 <p>about us</p>
                 <p>delivery and return policy</p>
                 <p>Help & FAQ</p>
@@ -442,20 +455,20 @@
               </div>
             </div>
           </div>
-          <div class="col-md-6 col-lg-4">
+          <div class="col-md-6 col-lg-4 col-12">
             <h5>Contact Info</h5>
             <div class="row margin-top">
-              <div class="col-sm-6 footer-link">
+              <div class="col-sm-6 footer-link col-6">
                 <p style="font-weight:bold; color:#000;">Oxford(UK)</p>
                 <p style="line-height:1.55rem;">1-3 Abbey Street<br>Eynsham<br>Oxford<br>OX29 4TB</p>
               </div>
-              <div class="col-sm-6 footer-link">
+              <div class="col-sm-6 footer-link col-6">
                 <p style="font-weight:bold; color:#000;">Walnut, CA(USA)</p>
                 <p style="line-height:1.55rem;">430 S Lemon Ave #3358<br>Walnut<br>California 91789<br>USA</p>
               </div>
             </div>
           </div>
-          <div class="col-lg-4">
+          <div class="col-lg-4 col-md-6 col-12" style="margin: 0 auto;">
             <h5>Sign Up Now</h5>
             <form class="margin-top" style="margin-top:79px;">
               <div class="form-group">
@@ -471,12 +484,12 @@
           </div>
         </div>
         <hr style="margin-top:3.5rem;">
-        <div class="row">
-          <div class="col-md-6">
-            <p>&copy; 2018 Mass impression. Desingned by Tran Mau Tri Tam</p>
+        <div class="row" style="margin-top:2rem;">
+          <div class="col-md-6 col-12">
+            <p class="center" style="font-size:13px; color:#aaa;">&copy; 2018 Mass impression. Desingned by Tran Mau Tri Tam</p>
           </div>
-          <div class="col-md-6">
-            <ul class="nav justify-content-end">
+          <div class="col-md-6 col-12">
+            <ul class="nav justify-content-end center">
               <a class="nav-item nav-link social-icon" href="#"><i id="facebook" class="fab fa-facebook-f"></i></a>
               <a class="nav-item nav-link social-icon" href="#"><i id="twitter" class="fab fa-twitter"></i></a>
               <a class="nav-item nav-link social-icon" href="#"><i id="instagram  " class="fab fa-instagram"></i></a>

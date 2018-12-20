@@ -40,18 +40,11 @@ a{
 }
 
 .pord_p{
-  margin-top: 34px;
   font-size: 12px;
 }
 
 .product_height{
   height: 330px;
-}
-
-@media (max-width: 576px) {
-  .product_height{
-    height: 520px;
-  }
 }
 
 .prod_btn{
@@ -107,7 +100,6 @@ a{
 
 .social-icon{
   font-size: 20px;
-  padding: 0 35px;
 }
 
 .social-icon:hover{
@@ -178,7 +170,7 @@ a{
     width: 16px;
     height: 16px;
     top: 1px;
-    left: 30px;
+    left: 43px;
     background-color: #ddd;
     border-radius: 3px;
     border:1px solid #ddd;
@@ -254,4 +246,137 @@ a{
   font-size: 14px;
   text-transform: capitalize;
   color: #999;
+}
+
+.hovicon {
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 50%;
+  text-align: center;
+  position: relative;
+  text-decoration: none;
+  z-index: 1;
+}
+.havicon:hover{
+font-size:10px;
+}
+.hovicon::after {
+pointer-events: none;
+position: absolute;
+width: 26%;
+height: 100%;
+border-radius: 50%;
+content:'';
+-webkit-box-sizing: content-box;
+-moz-box-sizing: content-box;
+box-sizing: content-box;
+}
+.hovicon::before {
+speak: none;
+font-size: 48px;
+line-height: 90px;
+font-style: normal;
+font-weight: normal;
+font-variant: normal;
+text-transform: none;
+display: block;
+-webkit-font-smoothing: antialiased;
+}
+.hovicon.effect-1 {
+background: rgba(255, 255, 255, 0.1);
+-webkit-transition: background 0.2s, color 0.2s;
+-moz-transition: background 0.2s, color 0.2s;
+transition: background 0.2s, color 0.2s;
+}
+.hovicon.effect-1:after {
+top: -3px;
+left: 21px;
+padding: 4px;
+/* box-shadow: 0 0 0 2px #000; */
+-webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+-webkit-transform: scale(.8);
+-moz-transition: -moz-transform 0.2s, opacity 0.2s;
+-moz-transform: scale(.8);
+-ms-transform: scale(.8);
+transition: transform 0.2s, opacity 0.2s;
+transform: scale(.8);
+opacity: 0;
+}
+/* Effect 1a */
+.hovicon.effect-1.sub-a:hover {
+  font-size: 12px;
+  margin:auto 0;
+}
+/* .hovicon.color1:after {
+  box-shadow: 0 0 0 2px #0075ff;
+}
+.hovicon.color2:after {
+  box-shadow: 0 0 0 2px #ff1f00;
+}
+.hovicon.color3:after {
+  box-shadow: 0 0 0 2px #02ffdd;
+}
+.hovicon.color4:after {
+  box-shadow: 0 0 0 2px #ff6300;
+}
+.hovicon.color5:after {
+  box-shadow: 0 0 0 2px #00ff3d;
+}
+.hovicon.color6:after {
+  box-shadow: 0 0 0 2px #4900ff;
+}
+.hovicon.color7:after {
+  box-shadow: 0 0 0 2px #ff0020;
+}
+.hovicon.color8:after {
+  box-shadow: 0 0 0 2px #ff0075;
+} */
+.hovicon.effect-1.sub-a:hover:after {
+-webkit-transform: scale(1);
+-moz-transform: scale(1);
+-ms-transform: scale(1);
+transform: scale(1);
+opacity: 1;
+}
+
+/*  Media query */
+
+@media (max-width: 576px) {
+  .product_height{
+    height: 600px;
+  }
+  .main{
+    padding-left: 15px!important;
+    padding-right: 15px!important;
+  }
+  .center{
+    text-align: center;
+    justify-content: center!important;
+  }
+  .prod_nav{
+    width: 100%;
+    margin: 0 auto;
+    display: inline-block;
+    text-align: center;
+  }
+  .hovicon::after {
+    width: 16%!important;
+    height: 100%!important;
+  }
+  .hovicon.effect-1:after {
+    top:-3px!important;
+    left: 42px!important;
+  }
+}
+@media (max-width: 990px) {
+  .nav{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    text-align: center;
+    justify-content: center!important;
+  }
+  .icon{
+    font-size: 20px;
+  }
 }
