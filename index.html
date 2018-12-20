@@ -76,181 +76,313 @@
             <aside class="col-12">
               <div class="color opacity-0">
                 <div class="row">
-                  <div class="col-md-6 col-6 float-left">
+                  <!-- <div class="col-md-6 col-6 float-left">
                     <p>Color</p>
                   </div>
                   <div class="col-md-6 col-6 float-right">
                     <i class="fas fa-minus"></i>
+                  </div> -->
+                  <div id="accordion" style="width:100%;">
+                  <div class="card">
+                    <div class="card-header" id="headingOne">
+                      <h5 class="mb-0">
+                        <button class="col-md-6 col-6 btn btn-link float-left" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          Color
+                        </button>
+                        <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                          <i class="fas fa-minus"></i>
+                        </button>
+                      </h5>
+                    </div>
+                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                      <div class="card-body">
+                        <div class="row circle">
+                          <div class="col-md-3 col-3 hovicon effect-1 sub-a color1">
+                            <i class="fas fa-circle" style="color:#0075ff;"></i>
+                          </div>
+                          <div class="col-md-3 col-3 hovicon effect-1 sub-a color2">
+                            <i class="fas fa-circle" style="color:#ff1f00;"></i>
+                          </div>
+                          <div class="col-md-3 col-3 hovicon effect-1 sub-a color3">
+                            <i class="fas fa-circle" style="color:#02ffdd;"></i>
+                          </div>
+                          <div class="col-md-3 col-3 hovicon effect-1 sub-a color4">
+                            <i class="fas fa-circle" style="color:#ff6300;"></i>
+                          </div>
+                        </div>
+                        <div class="row circle">
+                          <div class="col-md-3 col-3 hovicon effect-1 sub-a color5">
+                            <i class="fas fa-circle" style="color:#00ff3d;"></i>
+                          </div>
+                          <div class="col-md-3 col-3 hovicon effect-1 sub-a color6">
+                            <i class="fas fa-circle" style="color:#4900ff;"></i>
+                          </div>
+                          <div class="col-md-3 col-3 hovicon effect-1 sub-a color7">
+                            <i class="fas fa-circle" style="color:#ff0020;"></i>
+                          </div>
+                          <div class="col-md-3 col-3 hovicon effect-1 sub-a color8">
+                            <i class="fas fa-circle" style="color:#ff0075;"></i>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
                 </div>
-                <hr style="margin-top:0;">
-                <div class="row circle">
-                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color1">
-                    <i class="fas fa-circle" style="color:#0075ff;"></i>
+              </div>
+            </div>
+                <!-- <hr style="margin-top:0;"> -->
+
+              <div class="filter opacity-0">
+                <div class="row">
+                  <div id="accordionFilter" style="width:100%;">
+                    <div class="card">
+                      <div class="card-header" id="headingTwo">
+                        <h5 class="mb-0">
+                          <button class="col-md-6 col-6 btn btn-link float-left" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            Filter
+                          </button>
+                          <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                        </h5>
+                      </div>
+                      <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionFilter">
+                        <div class="card-body">
+                          <div id="accordionNewIn" style="width:100%;">
+                            <div class="card" style="padding-left:2rem;">
+                              <div class="filter-sub card-header" id="newin">
+                                <h5 class="mb-0">
+                                  <button class="col-md-6 col-6 btn btn-link float-left" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapseNewIn" aria-expanded="true" aria-controls="collapseNewIn">
+                                    <p class="filter-tag opacity-1" style="margin:0; color:#000;">New In</p>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseNewIn" class="collapse show" aria-labelledby="newin" data-parent="#accordionNewIn">
+                                <div class="card-body">
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Synthetic skin(6)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Synthetic skin(6)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Synthetic skin(6)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Synthetic skin(6)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Material -->
+                          <div id="accordionMaterial" style="width:100%;">
+                            <div class="card" style="padding-left:2rem;">
+                              <div class="filter-sub card-header" id="material">
+                                <h5 class="mb-0">
+                                  <button class="col-md-6 col-6 btn btn-link float-left foucsable" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapseMaterial" aria-expanded="true" aria-controls="collapseMaterial">
+                                    <p class="filter-tag" style="margin:0;">Materials</p>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseMaterial" class="collapse show" aria-labelledby="material" data-parent="#accordionMaterial">
+                                <div class="card-body">
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Synthetic skin(6)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Metal(88)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Wooden(158)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Fabric(294)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Polyurethane(25)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Viscoelastic(26)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Narutal fiber(17)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Synthetic fiber(20)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Natural skin(7)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Foam(77)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+
+                          <!-- Sale off -->
+                          <div id="accordionSaleOff" style="width:100%;">
+                            <div class="card" style="padding-left:2rem;">
+                              <div class="filter-sub card-header" id="saleoff">
+                                <h5 class="mb-0">
+                                  <button class="col-md-6 col-6 btn btn-link float-left" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapseSaleOff" aria-expanded="true" aria-controls="collapseSaleOff">
+                                    <p class="filter-tag" style="margin:0;">Sale Off</p>
+                                  </button>
+                                </h5>
+                              </div>
+                              <div id="collapseSaleOff" class="collapse show" aria-labelledby="saleoff" data-parent="#accordionSaleOff">
+                                <div class="card-body">
+                                  <div class="row material-cate">
+                                    <div class="col-md-8 col-8">
+                                      <p class="materials-cate-name">Synthetic skin(6)</p>
+                                    </div>
+                                    <div class="col-md-4 col-4" style="text-align:right;">
+                                      <div class="checkbox">
+                                        <input type="checkbox" id="checkboxInput"/>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color2">
-                    <i class="fas fa-circle" style="color:#ff1f00;"></i>
-                  </div>
-                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color3">
-                    <i class="fas fa-circle" style="color:#02ffdd;"></i>
-                  </div>
-                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color4">
-                    <i class="fas fa-circle" style="color:#ff6300;"></i>
-                  </div>
-                </div>
-                <div class="row circle">
-                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color5">
-                    <i class="fas fa-circle" style="color:#00ff3d;"></i>
-                  </div>
-                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color6">
-                    <i class="fas fa-circle" style="color:#4900ff;"></i>
-                  </div>
-                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color7">
-                    <i class="fas fa-circle" style="color:#ff0020;"></i>
-                  </div>
-                  <div class="col-md-3 col-3 hovicon effect-1 sub-a color8">
-                    <i class="fas fa-circle" style="color:#ff0075;"></i>
-                  </div>
-                </div>
+                <!-- <hr style="margin-top:0;"> -->
               </div>
 
-              <div class="filter">
-                <div class="row opacity-0">
-                  <div class="col-md-6 col-6 float-left">
-                    <p>Filter</p>
-                  </div>
-                  <div class="col-md-6 col-6 float-right">
-                    <i class="fas fa-minus"></i>
-                  </div>
-                </div>
-                <hr style="margin-top:0;">
-                <div class="">
-                  <p class="filter-tag opacity-1">New In</p>
-                </div>
-                <div class="">
-                  <p class="filter-tag opacity-1" style="font-weight:bold;">Materials</p>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Synthetic skin(6)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
+              <div class="price opacity-0">
+                <div class="row">
+                  <div id="accordionPrice" style="width:100%;">
+                    <div class="card">
+                      <div class="card-header" id="price">
+                        <h5 class="mb-0">
+                          <button class="col-md-6 col-6 btn btn-link float-left" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                            Price
+                          </button>
+                          <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                            <i class="fas fa-minus"></i>
+                          </button>
+                        </h5>
                       </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Metal(88)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Wooden(158)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Fabric(294)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Polyurethane(25)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Viscoelastic(26)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Narutal fiber(17)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Synthetic fiber(20)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Natural skin(7)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row material-cate">
-                    <div class="col-md-8 col-8">
-                      <p class="materials-cate-name">Foam(77)</p>
-                    </div>
-                    <div class="col-md-4 col-4" style="text-align:right;">
-                      <div class="checkbox">
-                        <input type="checkbox" id="checkboxInput"/>
+                      <div id="collapsePrice" class="collapse show" aria-labelledby="price" data-parent="#accordionPrice">
+                        <div class="card-body">
+                          <div class="price-range-slider">
+                            <input type="range" value="" style="width:100%; color:#fd7964;" class="range-slider">
+                            <span class="float-left" style="font-size:12px;">0</span>
+                            <span class="float-right" style="font-size:12px;">2000</span>
+                            <span class="float-none"></span>
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-                <div class="">
-                  <p class="filter-tag opacity-1" style="margin-top:1rem;">Sale Off</p>
-                </div>
-              </div>
-
-              <div class="price">
-                <div class="row opacity-0">
-                  <div class="col-md-6 col-6 float-left">
-                    <p>Price</p>
-                  </div>
-                  <div class="col-md-6 col-6 float-right">
-                    <i class="fas fa-minus"></i>
-                  </div>
-                </div>
-                <hr style="margin-top:0;">
-              </div>
-              <div class="price-range-slider">
-                <input type="range" value="" style="width:100%; color:#fd7964;" class="range-slider">
-                <span class="float-left" style="font-size:12px;">0</span>
-                <span class="float-right" style="font-size:12px;">2000</span>
-                <span class="float-none"></span>
+                <!-- <hr style="margin-top:0;"> -->
               </div>
 
               <div class="clear-all">
@@ -261,23 +393,23 @@
             </aside>
           </div>
           <div class="col-lg-10 col-md-9 col-12" style="margin: 0 auto;">
-            <ul class="nav prod_nav" style="justify-content:center;">
+            <ul id="nav" class="nav prod_nav" style="justify-content:center;">
               <li class="nav-item">
-                <a href="#" class="nav-link active">All<a>
+                <button class="nav-link active" onclick="filterSelection('all')">All</button>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">New</a>
+                <button class="nav-link" onclick="filterSelection('new')">New</button>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">offer</a>
+                <button class="nav-link" onclick="filterSelection('offer')">offer</button>
               </li>
               <li class="nav-item">
-                <a href="#" class="nav-link">delivery in 10 days</a>
+                <button class="nav-link" onclick="filterSelection('delivery')">delivery in 10 days</button>
               </li>
             </ul>
             <div class="row text-center" style="margin-top:50px;">
               <div class="col-lg-6 col-md-12 col-12">
-                  <div class="row product_height">
+                  <div class="row product_height all">
                     <div class="col-sm-6">
                       <img src="images/prod1.jpg">
                     </div>
@@ -291,7 +423,7 @@
                         <button class="btn prod_btn" type="button" name="button">buy now</button>
                     </div>
                   </div>
-                  <div class="row product_height">
+                  <div class="row product_height new">
                     <div class="col-sm-6">
                       <img src="images/prod2.jpg" alt="">
                     </div>
@@ -305,7 +437,7 @@
                       <button class="btn prod_btn" type="button" name="button">buy now</button>
                     </div>
                   </div>
-                  <div class="row product_height">
+                  <div class="row product_height offer">
                     <div class="col-sm-6">
                       <img src="images/prod3.jpg" alt="">
                     </div>
@@ -319,7 +451,7 @@
                       <button class="btn prod_btn" type="button" name="button">buy now</button>
                     </div>
                   </div>
-                  <div class="row product_height">
+                  <div class="row product_height delivery">
                     <div class="col-sm-6">
                       <img src="images/prod4.jpg" alt="">
                     </div>
@@ -422,7 +554,7 @@
               </div>
             </div>
             <div class="text-center">
-              <button type="button" class="btn btn-danger btn-lg" name="button" style="text-transform:uppercase;">show more porducts</button>
+              <button type="button" class="mainbtn btn btn-danger btn-lg" name="button" style="text-transform:uppercase;">show more porducts</button>
             </div>
           </div>
       </div>
@@ -479,7 +611,7 @@
                 <input type="email" name="last" class="form-control popupInput" required="required">
                 <label class="popupLabel" for="lastname">Email</label>
               </div>
-              <button type="button" name="button" class="btn btn-lg w-100" style="color:#fff;">sign up now</button>
+              <button type="button" name="button" class="mainbtn btn btn-lg w-100" style="color:#fff;">sign up now</button>
             </form>
           </div>
         </div>
@@ -547,6 +679,49 @@
           ]
         });
         });
+
+        filterSelection("all")
+        function filterSelection(c) {
+          var x, i;
+          x = document.getElementsByClassName("filterDiv");
+          if (c == "all") c = "";
+          for (i = 0; i < x.length; i++) {
+            w3RemoveClass(x[i], "show");
+            if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+          }
+        }
+
+        function w3AddClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+          }
+        }
+
+        function w3RemoveClass(element, name) {
+          var i, arr1, arr2;
+          arr1 = element.className.split(" ");
+          arr2 = name.split(" ");
+          for (i = 0; i < arr2.length; i++) {
+            while (arr1.indexOf(arr2[i]) > -1) {
+              arr1.splice(arr1.indexOf(arr2[i]), 1);
+            }
+          }
+          element.className = arr1.join(" ");
+        }
+
+        // Add active class to the current button (highlight it)
+        var btnContainer = document.getElementById("nav");
+        var btns = nav.getElementsByClassName("nav-link");
+        for (var i = 0; i < btns.length; i++) {
+          btns[i].addEventListener("click", function(){
+            var current = document.getElementsByClassName("active");
+            current[0].className = current[0].className.replace(" active", "");
+            this.className += " active";
+          });
+        }
       </script>
 
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>

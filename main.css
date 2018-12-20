@@ -17,7 +17,7 @@ a{
   font-size: 12px;
 }
 
-.btn{
+.mainbtn{
   border-radius: 0;
   font-weight: bold;
   background-color: #fd7964;
@@ -29,6 +29,35 @@ a{
   line-height: 1;
   padding: 1.5rem 3rem;
   letter-spacing: 3px;
+}
+
+.btn-link{
+  color: #000;
+}
+
+.btn-link:hover{
+  color: #000;
+  text-decoration: none;
+}
+
+.btn-link:focus{
+    font-weight: bold;
+}
+
+.card-body{
+    padding: 0;
+}
+.filter-sub{
+  border-bottom:0;
+}
+.card-header{
+  background-color: transparent;
+  padding: 0;
+}
+
+.card{
+  border:0;
+  border-radius: 0;
 }
 
 .btn-danger, .btn-danger:hover{
@@ -240,6 +269,8 @@ a{
   font-size: 11px;
   letter-spacing: 1px;
   color: #fd7964;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .footer-link{
@@ -337,6 +368,21 @@ opacity: 0;
 -ms-transform: scale(1);
 transform: scale(1);
 opacity: 1;
+}
+
+.filterDiv {
+  float: left;
+  background-color: #2196F3;
+  color: #ffffff;
+  width: 100px;
+  line-height: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+
+.show{
+  display: block;
 }
 
 /*  Media query */
