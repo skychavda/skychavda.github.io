@@ -58,15 +58,15 @@
               <div class="color opacity-0">
                 <div class="row">
                   <div id="accordion" style="width:100%;">
-                  <div class="card">
+                  <div class="card sildeCollapse">
                     <div class="card-header" id="headingOne">
                       <h5 class="mb-0">
-                        <button class="col-md-6 col-6 btn btn-link float-left" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <button class="btn btn-link float-left" style="padding-left: 0;text-align: left; width:100%;" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           Color
                         </button>
-                        <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        <!-- <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                           <i class="fas fa-minus"></i>
-                        </button>
+                        </button> -->
                       </h5>
                     </div>
                     <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
@@ -110,15 +110,15 @@
               <div class="filter opacity-0">
                 <div class="row">
                   <div id="accordionFilter" style="width:100%;">
-                    <div class="card">
+                    <div class="card sildeCollapse">
                       <div class="card-header" id="headingTwo">
                         <h5 class="mb-0">
-                          <button class="col-md-6 col-6 btn btn-link float-left" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <button class="btn btn-link float-left" style="padding-left: 0;text-align: left; width:100%;" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             Filter
                           </button>
-                          <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                          <!-- <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
                             <i class="fas fa-minus"></i>
-                          </button>
+                          </button> -->
                         </h5>
                       </div>
                       <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionFilter">
@@ -313,15 +313,15 @@
               <div class="price opacity-0">
                 <div class="row">
                   <div id="accordionPrice" style="width:100%;">
-                    <div class="card">
+                    <div class="card sildeCollapse">
                       <div class="card-header" id="price">
                         <h5 class="mb-0">
-                          <button class="col-md-6 col-6 btn btn-link float-left" style="padding-left: 0;text-align: left;" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                          <button class="btn btn-link float-left" style="padding-left: 0;text-align: left; width:100%;" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
                             Price
                           </button>
-                          <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
+                          <!-- <button class="col-md-6 col-6 btn btn-link float-right" data-toggle="collapse" data-target="#collapsePrice" aria-expanded="true" aria-controls="collapsePrice">
                             <i class="fas fa-minus"></i>
-                          </button>
+                          </button> -->
                         </h5>
                       </div>
                       <div id="collapsePrice" class="collapse show" aria-labelledby="price" data-parent="#accordionPrice">
@@ -683,6 +683,16 @@
               this.className += " active";
             });
           }
+
+          // $(window).on("load resize",function(e){
+          //   if(window.innerwidth > 767){
+          //     // $('.collapse').collapse('show');
+          //     $('.mb-0 > button').removeClass('collapsed');
+          //   } else {
+          //     // $('.panel-collapse').collapse('hide');
+          //     $('.mb-0 > button').addClass('collapsed');
+          //   }
+          // });
         </script>
 
 
