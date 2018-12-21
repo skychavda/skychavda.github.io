@@ -55,7 +55,7 @@
                     return $('<button type="button" />').text(i + 1);
                 },
                 dots: false,
-                dotsClass: 'slick-dots', 'slick-horizontal-dots',
+                dotsClass: 'slick-dots', 
                 draggable: true,
                 easing: 'linear',
                 edgeFriction: 0.35,

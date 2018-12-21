@@ -1,3 +1,7 @@
+footer{
+  overflow: hidden;
+}
+
 a{
   color: #000;
 }
@@ -384,6 +388,10 @@ a:hover{
   display: inline-flex;
 }
 
+#nav-link:hover{
+  color: #fd7964;
+  transition: color 0.5s ease;
+}
 /*  Media query */
 
 @media (max-width: 576px) {
@@ -424,4 +432,9 @@ a:hover{
   .icon{
     font-size: 20px;
   }
+}
+
+.header-icon{
+    padding-right: 0;
+    padding-left:37px;
 }

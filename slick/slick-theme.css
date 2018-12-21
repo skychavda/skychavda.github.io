@@ -118,7 +118,40 @@
 {
     margin-bottom: 30px;
 }
-
+@media (min-width: 769px) {
+  .slick-vertical-dots{
+    top:39%!important;
+  }
+}
+@media (max-width: 768px) {
+  .slick-vertical-dots{
+    top:30%!important;
+  }
+}
+@media (max-width: 576px) {
+  .slick-vertical-dots{
+    top:20%!important;
+  }
+}
+.slick-vertical-dots{
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  text-align: center;
+  right: 0;
+  top:40%;
+  bottom:0;
+}
+.slick-vertical-dots li{
+  position: relative;
+  display: inline;
+  width: 20px;
+  height: 20px;
+  margin: 0 5px;
+  padding: 0;
+  cursor: pointer;
+}
 .slick-dots
 {
     position: absolute;
@@ -158,7 +191,7 @@
 
     cursor: pointer;
 }
-.slick-dots li button
+.slick-dots li button, .slick-vertical-dots li button
 {
     font-size: 0;
     line-height: 0;
@@ -177,16 +210,20 @@
     background: transparent;
 }
 .slick-dots li button:hover,
-.slick-dots li button:focus
+.slick-dots li button:focus,
+.slick-vertical-dots li button:hover,
+.slick-vertical-dots li button:focus
 {
     outline: none;
 }
 .slick-dots li button:hover:before,
-.slick-dots li button:focus:before
+.slick-dots li button:focus:before,
+.slick-vertical-dots li button:hover:before,
+.slick-vertical-dots li button:focus:before
 {
     opacity: 1;
 }
-.slick-dots li button:before
+.slick-dots li button:before, .slick-vertical-dots li button:before
 {
     font-family: 'slick';
     font-size: 6px;
@@ -208,7 +245,8 @@
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-.slick-dots li.slick-active button:before
+.slick-dots li.slick-active button:before,
+.slick-vertical-dots li.slick-active button:before
 {
     opacity: 1;
     color: #fd7964;
