@@ -6,7 +6,7 @@ a{
   color: #000;
 }
 
-.active>.nav-link{
+.actives>.nav-link{
   color: #fd7964!important;
 }
 
@@ -378,9 +378,9 @@ opacity: 1;
   display: none;
 }
 
-a.nav-link.active{
+/* a.nav-link.active{
     color: #fd7964;
-}
+} */
 a:hover{
   cursor: pointer;
 }
@@ -437,4 +437,10 @@ a:hover{
 .header-icon{
     padding-right: 0;
     padding-left:37px;
+}
+
+@media (max-width: 767px) {
+  .collapse{
+    display: none!important;
+  }
 }
