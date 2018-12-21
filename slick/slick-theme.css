@@ -214,3 +214,26 @@
     color: #fd7964;
     font-size: 13px;
 }
+
+/* .slick-current img {
+    width: 120%;
+    max-width: none;
+} */
+.collection-slider .slick-slide {
+    padding: 20px;
+}
+
+.collection-slider .slick-current img {
+    width: 120%;
+    max-width: none;
+}
+.collection-slider .slick-slide {
+
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.collection-slider .slick-center {
+    -webkit-transform: scale(1.8);
+    transform: scale(1.8);
+
+}

@@ -371,18 +371,17 @@ opacity: 1;
 }
 
 .filterDiv {
-  float: left;
-  background-color: #2196F3;
-  color: #ffffff;
-  width: 100px;
-  line-height: 100px;
-  text-align: center;
-  margin: 2px;
   display: none;
 }
 
+a.nav-link.active{
+    color: #fd7964;
+}
+a:hover{
+  cursor: pointer;
+}
 .show{
-  display: block;
+  display: inline-flex;
 }
 
 /*  Media query */
