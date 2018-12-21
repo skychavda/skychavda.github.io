@@ -90,6 +90,34 @@
     margin-top: 160px;
     min-height: 1px;
 }
+@media (max-width: 1440px) {
+  .collection-slider .slick-slide
+  {
+      height: 369px;
+      margin-top: 113px;
+  }
+}
+@media (max-width: 1024px) {
+  .collection-slider .slick-slide
+  {
+      height: 248px;
+      margin-top: 63px;
+  }
+}
+@media (max-width: 768px) {
+  .collection-slider .slick-slide
+  {
+      height: 100%;
+      margin-top: 25px;
+  }
+}
+@media (max-width: 480px) {
+  .collection-slider .slick-slide
+  {
+      height: 100%;
+      margin-top: 1px;
+  }
+}
 [dir='rtl'] .slick-slide
 {
     float: right;
