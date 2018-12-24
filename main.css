@@ -464,9 +464,3 @@ a:hover{
     padding-right: 0;
     padding-left:37px;
 }
-
-@media (max-width: 767px) {
-  .collapse{
-    display: none!important;
-  }
-}
