@@ -508,6 +508,7 @@ a:hover{
   .header-icon{
     font-size: 15px;
   }
+<<<<<<< HEAD
   /* .col-sm-6{
     width: 100%!important;
     height: 60%;
@@ -516,3 +517,14 @@ a:hover{
     margin-left: 0;
   }
 }
+=======
+  .icon{
+    font-size: 20px;
+  }
+}
+
+.header-icon{
+    padding-right: 0;
+    padding-left:37px;
+}
+>>>>>>> a60da22069034a403d9df71f150ab30bc6285ee8
