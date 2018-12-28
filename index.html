@@ -18,28 +18,30 @@
           <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navigation" name="button" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navigation" style="justify-content: center;">
-            <ul class="navbar-nav">
-              <li class="nav-item"><a class="nav-link menu" href="#">New In</a></li>
-              <li class="nav-item actives"><a class="nav-link menu" href="#">Furniture</a></li>
-              <li class="nav-item"><a class="nav-link menu" href="#">Rest</a></li>
-              <li class="nav-item"><a class="nav-link menu" href="#">Decoration</a></li>
-              <li class="nav-item"><a class="nav-link menu" href="#">Outdoor</a></li>
-              <li class="nav-item"><a class="nav-link menu" href="#">Magazine</a></li>
-              <li class="nav-item"><a class="nav-link menu" href="#">Outlet</a></li>
+          <div class="collapse navbar-collapse justify-content-end" id="navigation">
+            <div style="margin:0 auto;">
+              <ul class="navbar-nav">
+                <li class="nav-item"><a class="nav-link menu" href="#">New In</a></li>
+                <li class="nav-item actives"><a class="nav-link menu" href="#">Furniture</a></li>
+                <li class="nav-item"><a class="nav-link menu" href="#">Rest</a></li>
+                <li class="nav-item"><a class="nav-link menu" href="#">Decoration</a></li>
+                <li class="nav-item"><a class="nav-link menu" href="#">Outdoor</a></li>
+                <li class="nav-item"><a class="nav-link menu" href="#">Magazine</a></li>
+                <li class="nav-item"><a class="nav-link menu" href="#">Outlet</a></li>
+              </ul>
+            </div>
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a href="#" class="nav-link header-icon"><i class="far fa-user"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link header-icon"><i class="fas fa-search"></i></a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link header-icon"><i class="fas fa-shopping-bag"></i></a>
+              </li>
             </ul>
           </div>
-          <ul class="nav justify-content-end">
-            <li class="nav-item">
-              <a href="#" class="nav-link header-icon"><i class="far fa-user"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link header-icon"><i class="fas fa-search"></i></a>
-            </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link header-icon"><i class="fas fa-shopping-bag"></i></a>
-            </li>
-          </ul>
         </div>
       </nav>
 
@@ -635,8 +637,8 @@
             x = document.getElementsByClassName("filterDiv");
             if (c == "all") c = "";
             for (i = 0; i < x.length; i++) {
-              w3RemoveClass(x[i], "show");
-              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              w3RemoveClass(x[i], "showProduct");
+              if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "showProduct");
             }
           }
 
